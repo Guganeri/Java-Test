@@ -15,8 +15,7 @@ public class Main {
 		System.out.print("Enter account number: ");
 		int accountUser = sc.nextInt();
 		System.out.print("Enter account holder: ");
-		String nameUser = sc.nextLine();
-		
+		String nameUser = sc.next();
 		CadastroBanco cb = new CadastroBanco(accountUser, nameUser);
 		
 		System.out.print("Is there na initial deposit (y/n)?");
@@ -24,7 +23,7 @@ public class Main {
 		
 		
 		if (firstDeposit.equalsIgnoreCase("y")) {
-			System.out.print("Enter initial deposit value");
+			System.out.print("Enter initial deposit value: ");
 			double value = sc.nextDouble();
 			cb.depositoUsuario(value);
 			System.out.println("Account data");
@@ -35,9 +34,15 @@ public class Main {
 
 		}
 		
-
-						
-
+		System.out.print("Enter a deposit value: ");
+		double value = sc.nextDouble();
+		cb.depositoUsuario(value);
+		System.out.println("Account " + cb.getNumeroUsuario() + ", Holder: " + cb.getNomeUsuario() + ", Balance: $" + cb.getSaldoUsuario());
+		
+		System.out.print("Enter a withdraw value: ");
+		value = sc.nextDouble();
+		cb.saqueUsuario(value);
+		System.out.println("Account " + cb.getNumeroUsuario() + ", Holder: " + cb.getNomeUsuario() + ", Balance: $" + cb.getSaldoUsuario());
 	}
 
 }
