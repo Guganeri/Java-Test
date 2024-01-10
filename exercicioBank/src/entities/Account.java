@@ -1,12 +1,14 @@
 package entities;
 
-public class CadastroBanco {
-
+public class Account {
+	
+	private static double TAX = 5.00;
+	
 	private int numeroUsuario;
 	private String nomeUsuario;
 	private double saldoUsuario;
 
-	public CadastroBanco(int numeroUsuario, String nomeUsuario) {
+	public Account(int numeroUsuario, String nomeUsuario) {
 		this.numeroUsuario = numeroUsuario;
 		this.nomeUsuario = nomeUsuario;		
 	}
@@ -32,6 +34,16 @@ public class CadastroBanco {
 	}
 	
 	public void saqueUsuario(double valor) {
-		this.saldoUsuario -= (valor+5.00);
+		this.saldoUsuario -= (valor+TAX);
 	}
+	
+	public String toString() {
+		return "Account "
+				+ numeroUsuario
+				+", Holder: "
+				+ nomeUsuario
+				+ ", Balancer: $ "
+				+ String.format("%.2f", saldoUsuario);
+	}
+	
 }
