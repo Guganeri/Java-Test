@@ -11,8 +11,7 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		int menorDeIdade = 0;
-		int avg = 0;		
+		int menorDeIdade = 0;	
 		
 		System.out.print("Quantas pessoas serão digitadas? ");
 		int count = sc.nextInt();
