@@ -16,7 +16,7 @@ public class Program {
 		
 		List<Employee> list = new ArrayList<>();
 		
-		System.out.println("How many employees will be registered? ");
+		System.out.print("How many employees will be registered? ");
 		int N = sc.nextInt();
 		
 		for(int i = 0; i<N; i++) {
@@ -36,7 +36,8 @@ public class Program {
 			list.add(emp);			
 		}
 		
-		System.out.println("Enter the employee id that will have salary increase: ");		
+		System.out.println();
+		System.out.print("Enter the employee id that will have salary increase: ");		
 		int idsalary = sc.nextInt();
 		Integer pos = position(list, idsalary);
 		if(pos == null) {
