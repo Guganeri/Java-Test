@@ -17,6 +17,7 @@ public class Program {
 		DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		DateTimeFormatter fmt2 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
 		DateTimeFormatter fmt3 = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm").withZone(ZoneId.systemDefault());
+		DateTimeFormatter fmt4 = DateTimeFormatter.ISO_DATE_TIME;
 		
 		System.out.println("d04 = " + d04.format(fmt1) );
 		System.out.println("d04 = " + fmt1.format(d04));
@@ -30,6 +31,12 @@ public class Program {
 		System.out.println("-----------------------");
 		
 		System.out.println("d06 = " + fmt3.format(d06));
+		
+		System.out.println("-----------------------");
+		
+		System.out.println("d05 = " + fmt4.format(d05));
+		
+		
 		
 
 	}
