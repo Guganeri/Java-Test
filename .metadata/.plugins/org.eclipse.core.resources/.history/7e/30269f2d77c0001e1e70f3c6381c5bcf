@@ -1,0 +1,26 @@
+package prgram;
+
+public class Test {
+
+	public static void main(String[] args) {
+			
+		
+		double [] vect = new double[3];
+		
+		vect[0] = 10;
+		vect[1] = 22;
+		vect[2] = 33;		
+		
+		for(int i=0; i < vect.length; i++) {
+			if (vect[i-1] == vect[i-2]) {
+				if(vect[i]== vect[i-2]) {
+					System.out.println("Same thing");
+				}
+			}
+			
+		}
+		
+
+	}
+
+}

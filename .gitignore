@@ -1,1 +1,25 @@
-/.metadata/
+# Arquivos de compilação Java
+*.class
+
+# Arquivos gerados pelo Maven
+target/
+
+# Arquivos gerados pelo Gradle
+build/
+.gradle/
+
+# Arquivos de configuração específicos do Eclipse
+.settings/
+
+# Arquivos de configuração específicos do IntelliJ IDEA
+.idea/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+
+# Arquivos de saída de build específicos do Maven
+mvnw
+mvnw.cmd
+
+.metadata/*
