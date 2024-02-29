@@ -1,9 +1,12 @@
 package application;
 
+import entities.Product;
+
 public class Program {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Product p = new Product("Tv", 1000.0);
 
 	}
 
