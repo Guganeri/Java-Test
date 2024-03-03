@@ -1,26 +1,24 @@
 package application;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.OrderItem;
-import entities.Product;
+import entities.Client;
 
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Product p = new Product("Tv", 1000.0);
+		Client cli = new Client("Maria", "maria@gmail.com", sdf.parse("20/10/1995"));
 		
-		OrderItem oi1 = new OrderItem(1, 1000, p);
-		
-		System.out.println(oi1.getProduct().getName());
-		
-		System.out.println(oi1);
-		
+		System.out.println(cli);
 		
 		sc.close();
 		
