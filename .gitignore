@@ -24,3 +24,34 @@ mvnw.cmd
 
 .metadata/*
 .metadata/
+
+# Eclipse
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# VS Code
+.vscode/
+.classpath
+.project
+.settings
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.iml
+*.ipr
+*.iws
+.idea/
+/target/
+*.code-workspace
+*.code-workspace-shm
+*.code-workspace-wal
